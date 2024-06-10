@@ -5,7 +5,7 @@ import math
 
 #bit rotating function thing
 def ROTR(x, n):
-    return ((x >> n) or (x << (32-n))) & 0xFFFFFFFF
+    return ((x >> n) | (x << (32-n))) & 0xFFFFFFFF
 
 def SHA_256(s):
     kSHA256Constants = [
